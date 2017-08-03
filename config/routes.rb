@@ -2,6 +2,14 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
 
+
+  get '/login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  get '/logout', to: 'sessions#destroy'
+
+  get '/signup', to: 'users#new'
+  post '/users', to: 'users#create'
+
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
@@ -60,11 +68,11 @@ Rails.application.routes.draw do
   #   end
 
   # Example resource route with concerns:
-  #   concern :toggleable do
+  #   concern to:ggleable do
   #     post 'toggle'
   #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
+  #   resources :posts, concerns: to:ggleable
+  #   resources :photos, concerns: to:ggleable
 
   # Example resource route within a namespace:
   #   namespace :admin do
