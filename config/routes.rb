@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
 
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 
   get '/login', to: 'sessions#new'
   post 'login', to: 'sessions#create'

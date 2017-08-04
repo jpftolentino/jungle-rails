@@ -36,6 +36,12 @@ gem 'rmagick'
 gem 'stripe'
 gem 'faker'
 
+# For viewing sent mail
+
+group :development do
+  gem 'letter_opener_web'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
