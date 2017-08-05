@@ -36,14 +36,16 @@
 
     <div>
     
-    <% @product.reviews.each do |review| %>
+    <% @product.reviews.order(created_at: :desc).each do |review| %>
         <% id = review.user_id %>
         <% user = @users.find(id) %>
         <p><%= user.first_name %> <%= user.last_name %></p>
         <p><%= review.description%></p>
         <p>rating: <%= review.rating%></p>
-        <% if current_user.id == user.id %>
+        <% if current_user != nil && current_user.id == user.id %>
           <%= link_to "delete", [@product, review], :method => :delete %>
+        <% else %>
+          <% %>
         <% end %>
     <% end %>
     </div>
