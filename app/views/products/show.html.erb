@@ -25,6 +25,28 @@
         </dl>
       </div>
     </div>
+    
+    <% if current_user %>
+      <%= form_for @review, url: "/products/#{@product.id}/reviews" do |review| %>
+        <%= review.text_area :description %>
+        <%= review.select :rating, [1, 2, 3, 4, 5] %>
+        <%= review.submit "Comment"%>
+      <% end %>
+    <% end %>
+
+    <div>
+    
+    <% @product.reviews.each do |review| %>
+        <% id = review.user_id %>
+        <% user = @users.find(id) %>
+        <p><%= user.first_name %> <%= user.last_name %></p>
+        <p><%= review.description%></p>
+        <p>rating: <%= review.rating%></p>
+        <% if current_user.id == user.id %>
+          <%= link_to "delete", [@product, review], :method => :delete %>
+        <% end %>
+    <% end %>
+    </div>
 
   </article>
 
