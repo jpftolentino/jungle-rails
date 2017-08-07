@@ -26,4 +26,21 @@
     <span>SOLD OUT!</span>
   </aside>
   <% end %>
+
+  <aside class="rating">
+    <% sum = 0.0 %>
+    <% count = 0 %>
+    <% @reviews.each do |review| %>
+      <% if product.id == review.product_id %>
+        <% sum += review.rating %>
+        <% count += 1 %>
+      <% end %>
+    <% end %>
+
+    <% if count != 0 %>
+      <span>rating: <%= sum / count %></span>
+    <% else %>
+      <span>rating: No Ratings</span>
+    <% end %>
+  </aside>
 </article>
