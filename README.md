@@ -27,6 +27,14 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
+## Email testing
+
+Use the domain to view sent emails from app
+```
+http://localhost:3000/letter_opener
+```
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle5.png?raw=true)
+
 ## Dependencies
 
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
