@@ -2,12 +2,12 @@
 
 A mini e-commerce application built with Rails 4.2. Focuses on MVC design patterns using rails.
 
-!["screenshot description"]https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle.png?raw=true
-!["screenshot description"]https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle1.png?raw=true
-!["screenshot description"]https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle2.png?raw=true
-!["screenshot description"]https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle3.png?raw=true
-!["screenshot description"]https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle4.png?raw=true
-!["screenshot description"]https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle5.png?raw=true
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle.png?raw=true)
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle1.png?raw=true)
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle2.png?raw=true)
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle3.png?raw=true)
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle4.png?raw=true)
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle5.png?raw=true)
 
 ## Setup
 
