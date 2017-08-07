@@ -5,7 +5,6 @@ A mini e-commerce application built with Rails 4.2. Focuses on MVC design patter
 !["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle.png?raw=true)
 !["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle1.png?raw=true)
 !["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle2.png?raw=true)
-!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle3.png?raw=true)
 !["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle4.png?raw=true)
 !["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle5.png?raw=true)
 
@@ -26,6 +25,8 @@ A mini e-commerce application built with Rails 4.2. Focuses on MVC design patter
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
+
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle3.png?raw=true)
 
 ## Email testing
 
