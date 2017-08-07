@@ -33,7 +33,7 @@ Use the domain to view sent emails from app
 ```
 http://localhost:3000/letter_opener
 ```
-!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle5.png?raw=true)
+!["screenshot description"](https://github.com/jpftolentino/jungle-rails/blob/master/docs/jungle%207.png?raw=true)
 
 ## Dependencies
 
