@@ -16,17 +16,23 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
       )
     end
 
+    @product = @category.products[0][:name]
+    
   end
 
-  scenario "They see product details on product details page" do
+  scenario "They see all products" do
     # ACT
     visit root_path
+    click_on @product  
+
+    # VERIFY
+    expect(page).to have_css '.products-show'
+
+    # VERIFY
+    expect(page).to have_content @product
 
     # DEBUG / VERIFY
     save_screenshot
-
-    # VERIFY
-    expect(page).to have_css 'article.product', 
     
   end
 
