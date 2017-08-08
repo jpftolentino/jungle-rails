@@ -36,10 +36,17 @@ gem 'rmagick'
 gem 'stripe'
 gem 'faker'
 
-# For Test driven Development
+# For Unit/Model testing
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   #...
+end
+
+# For Feature Testing
+group :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 # For viewing sent mail
